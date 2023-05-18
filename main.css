@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(65, 105, 225);
+    color: rgb(241, 241, 241);
+}
+
+header h1{
+    font-style: italic;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .container {
+    width: 100%;
+}
+
+#about img {
+    width: 50%;
+    margin-right: 35px;
+}
+
+#about .container {
+    padding: 35px 0;
+    align-items: flex-start;
+}
+
+#about h2,
+#product h2 {
+    color: rgb(65, 105, 225);
+    border-bottom: 2px solid rgb(65, 105, 225);
+    margin-bottom: 50px;
+    padding: 15px 0;
+    font-style: italic;
+}
+
+.container-produtos img {
+    width: 100%;
+}
+
+.container-produtos li {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.container-produtos li h3 {
+    margin: 16px 0;
+    font-size: 24px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(65, 105, 225);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 80%;
+    }
+
+    #about .container {
+        display: block;
+    }
+
+    #about img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container-produtos {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    #about .container {
+        display: block;
+    }
+
+    #about img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+    
+}
+
+@media screen and (max-height: 900px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+
